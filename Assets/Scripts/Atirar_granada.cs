@@ -24,7 +24,7 @@ public class Atirar_granada : MonoBehaviour
             //atirar com 'Q'
             if (Input.GetButtonDown("Q"))
             {
-                 Instantiate(_modeloBola);
+               
                 var objeto = Instantiate(_modeloBola, _pontoAtirar.position, Quaternion.identity);
                 objeto.GetComponent<Rigidbody>().AddForce(transform.forward * forcaAtirar);
                 granadas--;               
